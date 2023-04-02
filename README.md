@@ -1,6 +1,7 @@
 # Proyecto-1-BI
 
-Integrantes
+## Integrantes
+
 Santiago Prieto Álvarez-Sección 2-202013173
 
 Juan Esteban Arboleda Restrepo-Sección 2-
