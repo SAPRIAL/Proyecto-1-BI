@@ -4,4 +4,4 @@
 
 Santiago Prieto Álvarez-Sección 2-202013173
 
-Juan Esteban Arboleda Restrepo-Sección 2-
+Juan Esteban Arboleda Restrepo-Sección 2-201921578
