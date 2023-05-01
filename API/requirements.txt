@@ -1,0 +1,10 @@
+fastapi
+joblib
+pandas
+uvicorn
+sklearn
+langdetect
+deep_translator
+nltk
+inflect
+spacy

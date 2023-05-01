@@ -8,6 +8,20 @@ from pydantic import BaseModel
 
 import pandas as pd
 
+from fastapi.middleware.cors import CORSMiddleware
+
+app = FastAPI()
+
+origins = ["*"]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 class Review(BaseModel):
    id: float
    review_text: str
@@ -24,9 +38,15 @@ app = FastAPI()
 def read_root():
    return {"Hello": "World"}
 
+
+
 @app.get("/items/{item_id}")
 def read_item(item_id: int, q: Optional[str] = None):
    return {"item_id": item_id, "q": q}
+
+@app.options("/{somepath}")
+def cors():
+   return 
 
 @app.post("/predictNB")
 def make_predictions(review: Review):
